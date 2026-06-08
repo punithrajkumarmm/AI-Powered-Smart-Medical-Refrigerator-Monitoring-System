@@ -1,6 +1,6 @@
 import { AlertHistoryItem, DashboardStatus, ForecastResponse, TelemetryReading } from "./types";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = process.env.REACT_APP_API_BASE || window.location.origin;
 
 export async function fetchDevices(): Promise<DashboardStatus[]> {
   const response = await fetch(`${API_BASE}/devices`);

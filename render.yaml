@@ -1,0 +1,20 @@
+services:
+  - type: web_service
+    name: smart-medical-refrigerator-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: CORS_ORIGINS
+        value: "*"
+
+  - type: static_site
+    name: smart-medical-refrigerator-frontend
+    env: node
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_BASE
+        value: "https://<your-backend-service>.onrender.com"

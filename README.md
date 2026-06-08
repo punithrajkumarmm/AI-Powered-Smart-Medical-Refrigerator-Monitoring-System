@@ -92,6 +92,25 @@ npm start
 
 This scaffold provides a prototype-ready structure. Replace simulated device telemetry and in-memory storage with production hardware integration and persistent storage when ready.
 
+## Deploying to Render
+
+1. Push the repository to GitHub.
+2. Create a new Render account and connect your GitHub repository.
+3. Use the repository's `render.yaml` to deploy two services:
+   - `smart-medical-refrigerator-backend` as a Python web service
+   - `smart-medical-refrigerator-frontend` as a Node static site
+4. After the backend service is live, set the frontend environment variable `REACT_APP_API_BASE` to the backend service URL (for example, `https://your-backend-service.onrender.com`).
+5. Re-deploy the frontend service so it picks up the backend URL at build time.
+
+### Render service settings
+
+- Backend build command: `pip install -r backend/requirements.txt`
+- Backend start command: `uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT`
+- Frontend build command: `cd frontend && npm install && npm run build`
+- Frontend publish directory: `frontend/build`
+
+> If you want a single-service deployment, you can also add backend static file serving later and use one web service instead of two.
+
 ## Project Documentation
 
 A full project report is available in `PROJECT_REPORT.md`, including business understanding, system architecture, data pipeline, alert management, and future enhancements.
