@@ -1,0 +1,130 @@
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-
+
+[2026-06-02T07:15:41.654310] ALERT for fridge-: Temperature out of safe range (2.0-8.0 °C) (temp=13.5°C, humidity=57.0%, door_open=False, power_ok=True)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-: Temperature out of safe range (2.0-8.0 °C)
+Telemetry: temp=13.5°C, humidity=57.0%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-
+
+[2026-06-02T07:15:49.714620] ALERT for fridge-: Relative humidity is above the recommended threshold (temp=5.2°C, humidity=73.1%, door_open=False, power_ok=True)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-: Relative humidity is above the recommended threshold
+Telemetry: temp=5.2°C, humidity=73.1%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-
+
+[2026-06-02T07:34:09.961510] ALERT for fridge-: Door is open (temp=6.6°C, humidity=59.3%, door_open=True, power_ok=True)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-: Door is open
+Telemetry: temp=6.6°C, humidity=59.3%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-
+
+[2026-06-02T10:25:18.970410] ALERT for fridge-: Power failure detected (temp=5.7°C, humidity=57.4%, door_open=False, power_ok=False)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-: Power failure detected
+Telemetry: temp=5.7°C, humidity=57.4%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-LG2
+
+[2026-06-02T10:45:03.002475] ALERT for fridge-LG2: Door is open (temp=6.7°C, humidity=61.1%, door_open=True, power_ok=True)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-LG2: Door is open
+Telemetry: temp=6.7°C, humidity=61.1%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-SONE1
+
+[2026-06-02T10:45:18.374966] ALERT for fridge-SONE1: Temperature out of safe range (2.0-8.0 °C) (temp=9.8°C, humidity=58.3%, door_open=False, power_ok=True)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-SONE1: Temperature out of safe range (2.0-8.0 °C)
+Telemetry: temp=9.8°C, humidity=58.3%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-SONE2
+
+[2026-06-02T10:45:23.225766] ALERT for fridge-SONE2: Relative humidity is above the recommended threshold (temp=4.8°C, humidity=79.4%, door_open=False, power_ok=True)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-SONE2: Relative humidity is above the recommended threshold
+Telemetry: temp=4.8°C, humidity=79.4%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-MI1
+
+[2026-06-02T10:45:35.952574] ALERT for fridge-MI1: Power failure detected (temp=5.6°C, humidity=56.3%, door_open=False, power_ok=False)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-MI1: Power failure detected
+Telemetry: temp=5.6°C, humidity=56.3%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-MI2
+
+[2026-06-02T10:45:49.782535] ALERT for fridge-MI2: Temperature out of safe range (2.0-8.0 °C) (temp=12.8°C, humidity=57.6%, door_open=False, power_ok=True)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-MI2: Temperature out of safe range (2.0-8.0 °C)
+Telemetry: temp=12.8°C, humidity=57.6%
+
+---
+EMAIL
+To: ops-team@example.com
+Subject: Refrigerator alert: fridge-LG1
+
+[2026-06-03T05:23:51.043371] ALERT for fridge-LG1: Power failure detected (temp=5.7°C, humidity=57.0%, door_open=False, power_ok=False)
+
+---
+SMS
+To: +10000000000
+Message: Refrigerator alert for fridge-LG1: Power failure detected
+Telemetry: temp=5.7°C, humidity=57.0%
+
+---
