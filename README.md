@@ -111,6 +111,36 @@ This scaffold provides a prototype-ready structure. Replace simulated device tel
 
 > If you want a single-service deployment, you can also add backend static file serving later and use one web service instead of two.
 
+## Docker deployment
+
+Build both services locally:
+
+```bash
+docker compose build
+```
+
+Run the app locally:
+
+```bash
+docker compose up
+```
+```
+- Backend: http://localhost:8000
+- Frontend: http://localhost:3000
+```
+
+Build and push Docker images to Docker Hub:
+
+```bash
+docker build -f backend/Dockerfile -t <your-hub-username>/smart-medical-backend:latest .
+docker push <your-hub-username>/smart-medical-backend:latest
+
+docker build -f frontend/Dockerfile -t <your-hub-username>/smart-medical-frontend:latest .
+docker push <your-hub-username>/smart-medical-frontend:latest
+```
+
+Replace `<your-hub-username>` with your Docker Hub username.
+
 ## Project Documentation
 
 A full project report is available in `PROJECT_REPORT.md`, including business understanding, system architecture, data pipeline, alert management, and future enhancements.
